@@ -1,6 +1,21 @@
 /* COMMON */
-body {}
-.page {}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/anonymous-server-background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.page {
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.35) 50%);
+    width: 100%;
+    height: 100vh;
+}
 
 
 
@@ -23,14 +38,34 @@ body {}
 
 
 /* MAIN */
-.page__main {}
+.page__main {
+    height: 40%;
+}
 .page__wrapper {}
-.page__main-title {}
+.page__main-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 270px;
+    margin-left: 30px;
+}
 
 
 
 
 /* FOOTER */
-.page__footer {}
-.page__footer {}
-.page__footer-copy {}
+.page__footer { 
+    background: gray;
+    width: 80%;
+    height: 30px;;
+    border-radius: 5px;
+    bottom: 0px;
+}
+.page__wrapper {
+}
+.page__footer-copy {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
