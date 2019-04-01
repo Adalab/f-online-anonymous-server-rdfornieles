@@ -15,6 +15,8 @@ body {
     background-position: center;
     font-family: 'Roboto Slab', serif;
     position: relative;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -23,6 +25,9 @@ body {
 
 /* HEADER */
 .page__header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 
 }
 .nav-trigger {
@@ -30,8 +35,8 @@ body {
     background-color: #212121e5;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 30px;
-    margin-left: 250px;
+    margin-top: 20px;
+    margin-right: 20px;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -58,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1;
-    right: -500px;
+    right: -800px;
     transition: all 0.5s ease-in;
     -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
     /* -moz-transition: all 2s ease-in-out; /** Firefox **/
@@ -97,8 +102,8 @@ body {
     border: none;
     color: transparent;
     transition: all 0.3s ease;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
 }
 
 .nav-close:hover{
@@ -119,6 +124,7 @@ body {
     text-transform: uppercase;
     margin-top: 270px;
     margin-left: 30px;
+    padding-right: 70px;
     color: white;
 }
 
@@ -149,4 +155,66 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 255, 255, 0.534);
     
+}
+
+@media all and (min-width:768px) {
+    .page__main-title {
+        padding-right: 350px;
+        font-size: 60px;
+        margin-top: 500px;
+        margin-left: 50px;
+    }
+
+    .nav-trigger {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-close {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav {
+        right: -1200px;
+        transition: all 0.5s ease-in;
+        -webkit-transition: all 2s ease-in-out;
+    }
+
+    .nav__transition{
+        right: 0px;
+    }
+
+    .nav__items {
+        font-size: 40px;
+    }
+}
+
+@media all and (min-width:1024px) {
+    .nav {
+        right: -1450px;
+        transition: all 0.5s ease-in;
+        -webkit-transition: all 2s ease-in-out;
+    }
+
+    .nav__transition{
+        right: 0px;
+    }
+
+    .nav-trigger {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-close {
+        width: 50px;
+        height: 50px;
+    }
+
+    .page__main-title {
+        padding-right: 350px;
+        font-size: 80px;
+        margin-top: 250px;
+        margin-left: 200px;
+    }
 }
